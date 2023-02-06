@@ -29,4 +29,5 @@ class CleansingServices(AppServiceProject):
 
                 return response            
         except Exception as e:
+            print(e)
             return self.error_response(e)

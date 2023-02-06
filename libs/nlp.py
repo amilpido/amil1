@@ -4,7 +4,7 @@ import pandas as pd
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 
 factory = StemmerFactory()
-stemer = factory.create_stemmer()
+stemmer = factory.create_stemmer()
 
 alay_dict = pd.read_csv('data/new_kamusalay.csv', encoding='latin-1', header=None)
 alay_dict = alay_dict.rename(columns={0: 'original', 1: 'replacement'})
